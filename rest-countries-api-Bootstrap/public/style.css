@@ -1,0 +1,204 @@
+body {
+  background-color: rgb(238, 238, 238);
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.dark-mode{
+  background-color:  hsl(207, 26%, 17%);
+  color:  hsl(0, 0%, 100%);
+}
+.top-bar {
+  height: 50px;
+}
+ .nav-left {
+  font-size: 2vw;
+  font-weight: bolder;
+  margin-left: 15%;
+}
+.nav-right {
+  font-size: 1.2vw;
+  margin-right: 15%;
+  padding-left: 5px;
+}
+svg {
+  padding-right: 7px;
+}
+.above {
+  display: flex;
+  background-color: beige;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.icon{
+  font-size: 20px;
+  font-weight: bolder;
+  position: relative;
+  left: -40px;
+  top: 3px;
+}
+#country {
+  align-self: flex-start;
+  width: 50%;
+}
+.search {
+  margin-left: 15%;
+  width: 50%;
+}
+.dropdown {
+  align-self: flex-end;
+  margin-right: 15%;
+} 
+#country {
+  width: 30%;
+  display: inline;
+}
+.btn {
+  border: solid thin lightgray;
+}
+
+/* ------------------------------------------------ */
+ 
+.container {
+  align-items: center;
+}
+.multiple-cards {
+  margin: auto;
+  margin-top: 50px;
+}
+.one-card {
+  margin-top: 5%;
+  align-self: center;
+}
+.flag-main {
+  width: 100%;
+  height: 50%;
+}
+.flag {
+  width: 50%;
+  display: inline;
+}
+.cardInfo {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: inline;
+}
+.card-body-main {
+  width: 100%;
+  height: 50%;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(90, 90, 90);
+  margin-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.card-text {
+  color: hsl(0, 0%, 50%);
+  font-size: 11px;
+  margin-left: 5%;
+  margin-bottom: 2px;
+}
+.one-card-title {
+  font-size: 2vw;
+  font-weight: bolder;
+  color: rgb(39, 39, 39);
+  margin-top: 10%;
+  margin-left: 9%;
+  margin-bottom: 15px;
+  display: inline;
+}
+
+.one-card-text {
+  font-size: 1vw;
+  color: hsl(0, 0%, 33%);
+}
+.one-card-info {
+  display: inline-block;
+  margin-top: 7%;
+  margin-left: 5%;
+}
+.extra {
+  margin-top: 7%;
+  position: absolute;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+
+/* For Mobile or small screens */
+@media only screen and (max-width: 768px) {
+  .one-card {
+    position: relative;
+  }
+  .flag {
+    width: 100%;
+    height: 50%;
+  }
+  .cardInfo {
+    position: relative;
+    width: 100%;
+    height: 50%;
+  }
+ 
+  .one-card-title {
+    font-size: 4vw;
+    font-weight: bolder;
+    color: rgb(39, 39, 39);
+    margin-left: 9%;
+    margin-top: 10%;
+    margin-bottom: 15px;
+  }
+  .one-card-text {
+    font-size: 2vw;
+    color: hsl(0, 0%, 33%);
+    margin-left: 10%;
+  }
+
+  .nav-left {
+    font-size: 6vw;
+    font-weight: bolder;
+    margin-left: 2%;
+  }
+  
+  .nav-right {
+    font-size: 3vw;
+    margin-right: 2%;
+    padding-left: 5px;
+  }
+  .search {
+    /* display: block; */
+    float: left;
+    margin-left: 2%;
+  }
+  #country {
+    width: 80%;
+    display: inline;
+  }
+
+  .dropdown {
+    /* display: block;  */
+    margin-left: 2%;
+    margin-top: 5px;
+  }
+  .above {
+    flex-wrap: wrap;
+  }
+}
+
+/* html {
+  filter: invert(1);
+} */

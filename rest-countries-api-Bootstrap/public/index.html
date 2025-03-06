@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rest Countries API</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light noselect">
+    <div class="container-fluid top-bar">
+      <span class="navbar-brand mb-0 h1 nav-left">Where in the world?</span>
+      <span class="navbar-brand mb-0 h1 nav-right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-back" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"/>
+        </svg> 
+        <a id="mode">Dark Mode</a>
+      </span>
+    </div>
+  </nav>
+
+  <div class="above">
+    <div class="search">
+      <input id="country" class="form-control me-2" type="search" placeholder="Search for a country ...    " aria-label="Search" onkeyup="getCountryData()">
+      <i class="fas fa-search icon"></i>
+    </div>
+    
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        Filter by Region 
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="javascript:void(0)">Africa</a></li>
+        <li><a class="dropdown-item" href="javascript:void(0)">Americas</a></li>
+        <li><a class="dropdown-item" href="javascript:void(0)">Asia</a></li>
+        <li><a class="dropdown-item" href="javascript:void(0)">Europe</a></li>
+        <li><a class="dropdown-item" href="javascript:void(0)">Oceania</a></li>
+      </ul>
+    </div>
+  </div>
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card">
+          <img src="" class="card-img-top flag flag-main" alt="Country Flag">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text population"></p>
+            <p class="card-text region"></p>
+            <p class="card-text capital"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      
+    </div>
+
+  </div>
+  
+  <script type="text/javascript" src="../src/app.js"></script>
+</body>
+</html>
