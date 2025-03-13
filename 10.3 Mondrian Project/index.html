@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+      Write your CSS here 
+      Gap Colour: #000
+      White: #F0F1EC
+      Red: #E72F24
+      Black: #232629
+      Blue: #004592
+      Yellow: #F9D01E
+
+      For dimensions, see dimensions.png image.
+      HINT: Remember you can't change the properties of grid lines.
+      But grid lines are transparent!
+      */
+      body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main-container{
+        width: 748px;
+        height: 748px;
+        background-color: black;
+        display: grid;
+        grid-template-rows: 414px 295px 20px;
+        grid-template-columns: 320px 351px 50px;
+        gap: 9px;
+        
+      }
+      .red{
+        width: 320px;
+        height: 414px;
+        background-color: #E72F24;
+      }
+      .blue{
+        width: 50px;
+        height: 130px;
+        background-color:  #004592;
+      }
+      .Yellow{
+        width: 198px;
+        height: 21px;
+        background-color: #F9D01E;
+      }
+      .black{
+        width: 153px;
+        height: 21px;
+        background-color: #232629;
+      }
+      .white{
+        background-color:  #F0F1EC;
+      }
+      .w1{
+        width: 419px;
+        height: 414px;
+        grid-column: 2/2;
+      }
+      .w2{
+        width: 320px;
+        height: 295px;
+        grid-column: 1/1;
+      }
+      .w3{
+        width: 351px;
+        height: 295px;
+      }
+      .w5{
+        width: 320px;
+        height: 21px;
+      }
+      .w4{
+        width: 50px;
+        height: 185px;
+        
+      }
+      .blue-white-w4{
+        display: grid;
+        grid-template-rows: 1fr auto;
+        row-gap: 10px;
+      }
+      .Yellow-black{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 9px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="red"></div>
+      <div class="white w1"></div>
+      <div class="white w2"></div>
+      <div class="white w3"></div>
+      <div class="blue-white-w4">
+        <div class="blue"></div>
+        <div class="white w4"></div>
+      </div>
+      <div class="white w5"></div>
+      <div class="Yellow-black">
+        <div class="Yellow"></div>
+        <div class="black"></div>
+      </div>
+    </div>
+  </body>
+</html> 
